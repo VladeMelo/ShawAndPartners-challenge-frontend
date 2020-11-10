@@ -104,9 +104,9 @@ const UsersCard = ({currentPageInGithub}: UserCardProps) => {
                   <div>
                     <h1>{repository.name}</h1>
                     <a
-                      href={userSelected.html_url}
+                      href={repository.html_url}
                     >
-                      {userSelected.html_url}
+                      {repository.html_url}
                       </a>
                   </div>
 

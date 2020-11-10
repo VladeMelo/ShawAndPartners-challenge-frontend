@@ -57,17 +57,18 @@ export const Container = styled.div`
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
-  width: 100vw;
+  height: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5px 0;
   background: rgba(0, 0, 0, 0.9);
 `
 
 export const ModalContainer = styled.div`
   width: 400px;
-  height: 100vh;
+  min-height: 100%;
   padding: 5px;
 
   border-radius: 20px;
@@ -77,8 +78,8 @@ export const ModalContainer = styled.div`
 
 export const ModalHeader = styled.div`
   background: rgba(242, 243, 245, 0.5);
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 19.5px;
+  border-top-left-radius: 19.5px;
 
   width: 100%;
   height: 160px;
@@ -134,15 +135,18 @@ export const Repository = styled.div`
     h1 {
       font-size: 20px;
       color: rgba(242, 243, 245, 0.5);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     a {
+      font-size: 14px;
       text-decoration: none;
       color: rgba(242, 243, 245, 0.5);
     }
   }
 
   h3 {
+    font-size: 12px;
     color: rgba(242, 243, 245, 0.5);
   }
 

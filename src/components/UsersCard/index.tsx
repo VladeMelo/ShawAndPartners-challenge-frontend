@@ -50,7 +50,7 @@ const UsersCard = ({currentPageInGithub}: UserCardProps) => {
   }, [currentPageInGithubMemo])
 
   useEffect(() => {
-    api.get<UserRepositoriesProps[]>('', {
+    api.get<UserRepositoriesProps[]>(`${userSelected.login}/repos`, {
       params: {
         username: userSelected.login
       }
